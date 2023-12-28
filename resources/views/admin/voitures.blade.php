@@ -29,8 +29,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
+        
             @foreach ($voitures as $item)
+            <tr>
                 <td><img src="{{asset("storage/imagevoiture/".$item->images)}}" width="70px" alt=""></td>
                 <td>{{$item->nomvoiture}}</td>
                 <td>{{$item->annee}}</td>
@@ -50,10 +51,10 @@
                     <a class="btn btn-warning"  href="{{url('/editvoiture/'.$item->id_voiture)}}">Modifier</a>
                     <a class="btn btn-danger"  href="{{url('/deletevoiture/'.$item->id_voiture)}}" onclick="return confirm('Voulez vous vraiment suprimer cette voiture ?');">Supprimer</a>
                 </td>
-
+          </tr>
             @endforeach
           
-        </tr>
+        
         
         </tbody>
         <tfoot>

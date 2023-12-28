@@ -15,8 +15,5 @@ class Controller extends BaseController
         auth()->logout();
         return redirect('/');
     }
-    // public function dashboard()
-    // {
-    //     return view('admin.home');
-    // }
+
 }

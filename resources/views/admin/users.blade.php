@@ -19,8 +19,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
+        
             @foreach ($users as $item)
+            <tr>
                 <td>{{$item->name}}</td>
                 <td>{{$item->email}}</td>
                 <td>
@@ -30,9 +31,10 @@
                         <span class="badge badge-success">Admin</span>
                     @endif
                 </td>
+              </tr>
             @endforeach
           
-        </tr>
+        
         
         </tbody>
         <tfoot>

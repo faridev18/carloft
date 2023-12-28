@@ -184,4 +184,5 @@ class VoitureController extends Controller
 
         return view('admin.locations')->with('voitures', $voitures);
     }
+    
 }
